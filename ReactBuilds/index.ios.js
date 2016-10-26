@@ -14,10 +14,11 @@ import {
 } from 'react-native';
 
 var Approach1 = require('./Approach1')
+var Approach2 = require('./Approach2/Approach2')
 
 export default class ReactBuilds extends Component {
   render() {
-    return <Approach1/>
+    return <Approach2/>
   }
 }
 
