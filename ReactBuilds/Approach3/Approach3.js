@@ -12,14 +12,16 @@ import {
   View,
   ActivityIndicator
 } from 'react-native';
+import Config2 from 'react-native-config'
+export default class Approach3 extends Component {
 
-var Approach1 = require('./Approach1')
-var Approach2 = require('./Approach2/Approach2')
-var Approach3 = require('./Approach3/Approach3')
-
-export default class ReactBuilds extends Component {
   render() {
-    return <Approach3/>
+     console.log('Config',Config2);
+   return (
+     <View style={{flex:1,justifyContent: 'center',alignItems: 'center'}}>
+         <Text> Hello {Config2.API_URL}</Text>
+     </View>
+   );
   }
 }
 
@@ -42,4 +44,4 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('ReactBuilds', () => ReactBuilds);
+module.exports = Approach3
