@@ -16,10 +16,11 @@ import {
 var Approach1 = require('./Approach1')
 var Approach2 = require('./Approach2/Approach2')
 var Approach3 = require('./Approach3/Approach3')
+var Approach4 = require('./Approach4/Approach4')
 
 export default class ReactBuilds extends Component {
   render() {
-    return <Approach1/>
+    return <Approach4/>
   }
 }
 
