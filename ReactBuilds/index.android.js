@@ -11,10 +11,10 @@ import {
   Text,
   View
 } from 'react-native';
-var Approach3 = require('./Approach3/Approach3')
+var Approach4 = require('./Approach4/Approach4')
 export default class ReactBuilds extends Component {
   render() {
-      return <Approach3/>
+      return <Approach4/>
   }
 }
 
