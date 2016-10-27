@@ -17,8 +17,19 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   NSURL *jsCodeLocation;
-
+  
+    #ifdef PRODUCTION
+      NSLog(@"you are on Production build Mode");
+    #elif RELEASE
+      NSLog(@"you are on Release build Mode");
+    #elif DEBUG
+      NSLog(@"you are on Debug build Mode");
+    #elif STAGING
+      NSLog(@"you are on Staging build Mode");
+    #endif
+  
   jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];
+  
 
   RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
                                                       moduleName:@"ReactBuilds"
