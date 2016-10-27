@@ -19,7 +19,7 @@ var Approach3 = require('./Approach3/Approach3')
 
 export default class ReactBuilds extends Component {
   render() {
-    return <Approach3/>
+    return <Approach1/>
   }
 }
 
