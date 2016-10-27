@@ -20,7 +20,8 @@ export default class Approach4 extends Component {
      console.log(configFromNative);
    return (
      <View style={{flex:1,justifyContent: 'center',alignItems: 'center'}}>
-         <Text> Reading Configuration From Native Land</Text>
+         <Text> Reading Configuration From</Text>
+         <Text style={{fontSize:20, fontFamily:'AvenirNext-Bold'}}> Native Land</Text>
          <Text> This Implementation uses the  Xcode Build Schemes </Text>
          <Text> so is Confined to " iOS " </Text>
          <Text> Picked the BuildMode from Xcode</Text>
