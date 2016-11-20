@@ -11,7 +11,7 @@ Approach#2
 
 Old School method of chaging the Mode in the JS files here : https://github.com/symmetriccurve/ReactBuilds/blob/master/ReactBuilds/Approach2/Approach2.js#L15
 
-Approach#3(As of Now it only works for iOS)
+Approach#3
 
 Using import Config2 from 'react-native-config' This Approach is bit of incomplete as it does not pick the .envProb or .envStage files while building it from terminal
 
