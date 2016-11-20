@@ -13,13 +13,19 @@ Approach#2
 Old School method of chaging the Mode in the JS files here : https://github.com/symmetriccurve/ReactBuilds/blob/master/ReactBuilds/Approach2/Approach2.js#L15
 
 
-Approach#3
+Approach#3(As of Now it only works for iOS)
 
 Using import Config2 from 'react-native-config'
 This Approach is bit of incomplete as it does not pick the .envProb or .envStage files while building it from terminal
 
-Approach#4
+Approach#4(As of Now it only works for iOS)
 
 Using Complete independent Native Module(and using React Bridging) on iOS and Android that can figure out the BuildMode from the Xcode(in Case of iOS) and AndroidStudio(in Case of Android).
 
 https://github.com/symmetriccurve/ReactBuilds/blob/master/ReactBuilds/Approach4/Approach4.js#L17
+
+
+Todo:
+
+1.Fix Approach#3 to Pick . env files
+2.Approach#4 Implement React-bridge on Android to Listen BuildModes form Native Land.
